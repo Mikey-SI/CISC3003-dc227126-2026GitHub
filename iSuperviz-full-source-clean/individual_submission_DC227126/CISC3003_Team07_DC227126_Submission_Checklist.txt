@@ -1,0 +1,43 @@
+CISC3003 Team07 DC227126 Submission Checklist
+
+Student: Si Tin Iek (DC227126)
+Team: Team 07 - iSuperviz
+
+1. Teamwork Project Assignment (Proposal + Report + PPT)
+Submit:
+- iSuperviz_Team07_Proposal (1)(1).docx
+- iSuperviz_Team07_Project_Report_Final(1).pdf
+- CISC3003_Team07_modified(1).pptx
+
+2. Teamwork Project Assignment (Coding Archive)
+Submit:
+- cisc3003-Team07-ProjectCode.zip
+Also push the project to:
+- https://github.com/Mikey-SI/CISC3003-dc227126-2026GitHub
+
+3. Collaborative Forum Threads
+Create/post:
+- Our Project GitHub Link: https://github.com/Mikey-SI/CISC3003-dc227126-2026GitHub
+- Our Project Deployed URL for Testing: https://mikey-si.github.io/CISC3003-dc227126-2026GitHub/CISC3003-TeamProject-Team07-iSuperviz/
+- My Team Digital Story for Project Assignment: paste the team video link after upload
+- My Individual Digital Story for Project Assignment: paste your own video link after upload
+
+4. Team Digital Story
+Submit:
+- Team MP4 or ZIP, 10-15 minutes, under 200 MB
+- Must include every member's participation
+
+5. Individual Digital Story
+Use:
+- CISC3003_Team07_DC227126_SiTinIek_Individual_PPT.pptx
+- CISC3003_Team07_DC227126_SiTinIek_Individual_Digital_Story_Script.docx
+Record:
+- PPT voice narration plus deployed website screen demo
+- 10-15 minutes, under 200 MB
+Preferred ZIP name:
+- cisc3003-Team07-DC227126-ProjectDigiStory.zip
+
+Demo login:
+- professor@um.edu.mo / demo1234
+Redeem code:
+- TEAM07-ABC

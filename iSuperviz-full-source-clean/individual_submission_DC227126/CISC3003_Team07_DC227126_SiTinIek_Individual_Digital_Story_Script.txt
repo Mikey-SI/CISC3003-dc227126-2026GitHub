@@ -1,0 +1,75 @@
+Individual Digital Story Script
+Si Tin Iek (DC227126), Team 07
+
+Slide 1:
+Hello, my name is Si Tin Iek, student ID DC227126, from Pair 04 in Team 07. In this individual
+digital story, I will explain my contribution to iSuperviz, our AI research supervisor web
+application. My main role was supporting frontend and backend development with Yang Xu, especially
+helping the website pages connect with service logic. I will focus on what I worked on, how the
+services fit the course requirements, and what I learned from turning a project idea into a deployed
+web artifact.
+
+Slide 2:
+The CISC3003 project required a responsive full-stack web application with user login, password
+reset, dashboard, search, history, shopping cart, peculiar services and a deployed URL. Inside the
+team, I focused on implementation support. I checked that the screens were not only visual designs,
+but could follow the required user workflow. This means that when a user logs in, searches, spends
+credits, checks the cart, or opens the dashboard, the interface should reflect a clear service
+behind it.
+
+Slide 3:
+The project architecture has a React and TypeScript frontend, an Express and SQLite backend, and a
+mock API layer for GitHub Pages. This was important because GitHub Pages cannot run a Node server. I
+learned how the frontend can still call the same style of API responses during the public deployed
+demo. The local backend remains in the coding archive, while the public version is designed for
+convenient assessment through one URL.
+
+Slide 4:
+For the account workflow, the login page allows assessors to use the demo account, while the forgot-
+password page demonstrates account checking and reset logic. I reviewed how the frontend stores
+login information, redirects unauthenticated users, and depends on backend or mock responses for a
+complete authentication flow. This part also helped me understand why small validation details
+matter, because account services are the first gate before the dashboard and research functions.
+
+Slide 5:
+The paper tracking workflow is the core research feature. Users can search papers, open paper
+details, read reflective notes, ask questions and use credit-based actions. My integration focus was
+to understand how paper actions affect user credits and how frontend state should update after a
+service call. For example, Explore and Download PDF should not feel like static buttons; they should
+behave like real research services with visible cost and feedback.
+
+Slide 6:
+The peculiar services show our own project idea beyond ordinary course requirements. The Idea Graph
+connects saved research ideas with related papers, and Hallucination Audit gives a structured AI-
+review result. These features helped the project feel like a research supervisor instead of only a
+shopping or login system. When preparing my explanation, I used these two pages as evidence that the
+project has a domain-specific purpose.
+
+Slide 7:
+The shop, cart and dashboard cover the e-commerce and history-related requirements. A user can add
+credit products, check out, receive updated credits, and later see orders and activity history in
+the dashboard. This part taught me that one action must update several parts of the application
+consistently. If checkout succeeds but the dashboard does not change, the workflow is not
+convincing, so integration checking is very important.
+
+Slide 8:
+For testing and deployment evidence, the team used unit tests for mock API parity and responsive
+rendering, plus manual browser checks and screenshots. The deployed GitHub Pages version uses a
+mock-first bundle so assessors can test the main functions through one public URL without installing
+the backend. The screenshots in my report and PPT are arranged as a walkthrough so that the video
+can show evidence quickly and clearly.
+
+Slide 9:
+My biggest learning was that frontend and backend must agree on service contracts. If the API
+response, local storage, page state and dashboard display do not match, the user experience breaks.
+I also learned how to explain limitations honestly, especially the difference between local Express
+backend and GitHub Pages mock deployment. This project made me more aware that documentation,
+testing and deployment are part of engineering work, not separate tasks after coding.
+
+Slide 10:
+To conclude, my individual contribution was supporting implementation and service integration for
+the iSuperviz website. For submission, I prepared this individual PPT, report and narration script,
+while the team code archive is named cisc3003-Team07-ProjectCode.zip. The final individual digital
+story should record this narration with the PPT and a short deployed website demo. During recording,
+I will open the deployed URL, login with the demo account, and briefly show the paper, cart and
+dashboard pages as proof of my contribution.
