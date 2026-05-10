@@ -42,6 +42,7 @@ values for the reviewer.
 
 ## Repository layout
 
+- `index.html`, `static/`, root assets – GitHub Pages deployable build for the live testing URL.
 - `src/` – React + TypeScript SPA (Create React App, Ant Design, React-Flow).
 - `src/mock/` – zero-dependency mock of the backend used when no real server is
   reachable (i.e. GitHub Pages static deployment).
@@ -50,6 +51,9 @@ values for the reviewer.
 - `docs/` – internal design notes for the shared paper graph.
 - `build/` – optimized production bundle (checked in so GitHub Pages can serve
   it directly from the repo root).
+- `submission/team/` – final team proposal, report and PPT for Moodle submission.
+- `submission/individual/DC227126/` – Si Tin Iek's individual report, PPT, script and checklist.
+- `submission/SUBMISSION_GUIDE.md` – final links and file map for Moodle/forum submission.
 
 ## API coverage (what the backend implements)
 

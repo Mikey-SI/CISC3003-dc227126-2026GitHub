@@ -5,9 +5,9 @@ Team: Team 07 - iSuperviz
 
 1. Teamwork Project Assignment (Proposal + Report + PPT)
 Submit:
-- iSuperviz_Team07_Proposal (1)(1).docx
-- iSuperviz_Team07_Project_Report_Final(1).pdf
-- CISC3003_Team07_modified(1).pptx
+- submission/team/iSuperviz_Team07_Proposal (1)(1).docx
+- submission/team/iSuperviz_Team07_Project_Report_Final(1).pdf
+- submission/team/CISC3003_Team07_modified(1).pptx
 
 2. Teamwork Project Assignment (Coding Archive)
 Submit:
@@ -19,23 +19,25 @@ Also push the project to:
 Create/post:
 - Our Project GitHub Link: https://github.com/Mikey-SI/CISC3003-dc227126-2026GitHub
 - Our Project Deployed URL for Testing: https://mikey-si.github.io/CISC3003-dc227126-2026GitHub/CISC3003-TeamProject-Team07-iSuperviz/
-- My Team Digital Story for Project Assignment: paste the team video link after upload
-- My Individual Digital Story for Project Assignment: paste your own video link after upload
+- My Team Digital Story for Project Assignment: https://youtu.be/SmKLmTDd6h8?si=wqLNiCyr5_JpVIxP
+- My Individual Digital Story for Project Assignment: https://youtu.be/NQjikjAigDk?si=KnFihSIrQ5yp9CVh
 
 4. Team Digital Story
 Submit:
 - Team MP4 or ZIP, 10-15 minutes, under 200 MB
 - Must include every member's participation
+- Public viewing link: https://youtu.be/SmKLmTDd6h8?si=wqLNiCyr5_JpVIxP
 
 5. Individual Digital Story
 Use:
-- CISC3003_Team07_DC227126_SiTinIek_Individual_PPT.pptx
-- CISC3003_Team07_DC227126_SiTinIek_Individual_Digital_Story_Script.docx
+- submission/individual/DC227126/CISC3003_Team07_DC227126_SiTinIek_Individual_PPT.pptx
+- submission/individual/DC227126/CISC3003_Team07_DC227126_SiTinIek_Individual_Digital_Story_Script.docx
 Record:
 - PPT voice narration plus deployed website screen demo
 - 10-15 minutes, under 200 MB
 Preferred ZIP name:
 - cisc3003-Team07-DC227126-ProjectDigiStory.zip
+- Public viewing link: https://youtu.be/NQjikjAigDk?si=KnFihSIrQ5yp9CVh
 
 Demo login:
 - professor@um.edu.mo / demo1234
