@@ -20,7 +20,8 @@ PROJECT_DIR = Path(__file__).resolve().parent
 REPO_DIR = PROJECT_DIR.parent
 OUT_DIR = PROJECT_DIR / "individual_submission_DC227126"
 SCREEN_DIR = PROJECT_DIR / "3003-screenshots"
-DEPLOY_DIR = REPO_DIR / "CISC3003-TeamProject-Team07-iSuperviz"
+PROJECT_FOLDER_NAME = "CISC3003-TeamProject-Team07-iSuperviz"
+DEPLOY_DIR = PROJECT_DIR if PROJECT_DIR.name == PROJECT_FOLDER_NAME else REPO_DIR / PROJECT_FOLDER_NAME
 CODE_ZIP = REPO_DIR / "cisc3003-Team07-ProjectCode.zip"
 
 TEAM = "Team 07"
@@ -324,7 +325,7 @@ def create_report() -> Path:
     add_title(doc, "14. Installation, Deployment and Data Instructions", 1)
     add_numbered(doc, [
         "Install Node.js 18/20/22 and npm.",
-        "Open the project folder iSuperviz-full-source-clean.",
+        f"Open the project folder {PROJECT_FOLDER_NAME}.",
         "Run npm install in the root folder.",
         "Run npm install --prefix server for the Express backend dependencies.",
         "Start the backend with npm start inside server.",
@@ -737,7 +738,7 @@ def should_skip_zip(path: Path) -> bool:
 def create_code_zip() -> Path:
     if CODE_ZIP.exists():
         CODE_ZIP.unlink()
-    roots = [PROJECT_DIR, DEPLOY_DIR]
+    roots = list(dict.fromkeys([PROJECT_DIR, DEPLOY_DIR]))
     with zipfile.ZipFile(CODE_ZIP, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
         for root in roots:
             if not root.exists():
