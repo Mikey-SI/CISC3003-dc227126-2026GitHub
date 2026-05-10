@@ -388,9 +388,9 @@ export const TEAM = {
       name: 'SI TIN IEK', nickname: 'Mikey',
       email: 'dc227126@umac.mo',
       individualUrl:
-        'https://useriiiis.github.io/CISC3003-dc227126-2026GitHub/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-home.html',
+        'https://mikey-si.github.io/CISC3003-dc227126-2026GitHub/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-home.html',
       pairUrl:
-        'https://useriiiis.github.io/CISC3003-dc227126-2026GitHub/CISC3003-PairAssgn-2026APR02/public/cisc3003-PairAssgn.html',
+        'https://mikey-si.github.io/CISC3003-dc227126-2026GitHub/CISC3003-PairAssgn-2026APR02/public/cisc3003-PairAssgn.html',
       contribution:
         'Idea Graph visualisation, React-Flow based layouts and interactive node exploration.',
     },
