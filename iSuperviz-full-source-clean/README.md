@@ -6,7 +6,7 @@ Assignment (2026APR13 – 2026MAY04).
 ## Live URL (GitHub Pages)
 
 ```
-https://<your-github-user>.github.io/iSuperviz/
+https://mikey-si.github.io/CISC3003-dc227126-2026GitHub/CISC3003-TeamProject-Team07-iSuperviz/
 ```
 
 The static bundle under `build/` is self-contained: it includes a drop-in mock
