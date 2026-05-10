@@ -11,7 +11,7 @@
 
 ### Teamwork Project Assignment (Proposal + Report + PPT)
 
-Submit the three team files in `submission/team/`:
+Submit the three team files. Copies are available both at the repository root and in `submission/team/`:
 
 - `iSuperviz_Team07_Proposal (1)(1).docx`
 - `iSuperviz_Team07_Project_Report_Final(1).pdf`
