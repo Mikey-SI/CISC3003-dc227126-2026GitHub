@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('form[data-validate]').forEach(form=>form.addEventListener('submit',event=>{for(const field of form.querySelectorAll('[required]')){if(!field.value.trim()){event.preventDefault();alert('Please complete all required fields.');field.focus();return;}}}));});

@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const f=document.querySelector('#contactForm'); if(f)f.addEventListener('submit',e=>{if(!f.full_name.value.trim()||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(f.email.value)||f.message.value.trim().length<10){e.preventDefault();alert('B.01 client-side validation failed.');}});});

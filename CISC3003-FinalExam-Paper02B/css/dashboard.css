@@ -1,0 +1,1 @@
+.dashboard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}.stat{background:#fff;border:1px solid #d8e0ee;border-radius:16px;padding:20px}.stat strong{display:block;font-size:1.8rem;color:#2563eb}
