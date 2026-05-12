@@ -1,14 +1,7 @@
 <?php
 require_once __DIR__ . '/mail_config.php';
 
-function send_exam_mail(string $to, string $subject, string $body): bool
-{
-    $result = send_exam_mail_with_debug($to, $subject, $body);
-    file_put_contents(__DIR__ . '/mail-debug.log', date('c') . " status={$result['status']}\n{$result['debug']}\n", FILE_APPEND);
-    return $result['ok'];
-}
-
-function send_exam_mail_with_debug(string $to, string $subject, string $body): array
+function send_gmail_message(string $to, string $subject, string $body, ?string $replyEmail = null, ?string $replyName = null): array
 {
     $autoload = dirname(__DIR__) . '/vendor/autoload.php';
     if (!file_exists($autoload)) {
@@ -38,6 +31,9 @@ function send_exam_mail_with_debug(string $to, string $subject, string $body): a
         $mail->CharSet = 'UTF-8';
         $mail->setFrom(gmail_username(), SMTP_FROM_NAME);
         $mail->addAddress($to);
+        if ($replyEmail) {
+            $mail->addReplyTo($replyEmail, $replyName ?: $replyEmail);
+        }
         $mail->Subject = $subject;
         $mail->Body = $body;
         $mail->send();
