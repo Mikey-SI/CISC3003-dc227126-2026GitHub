@@ -3,13 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=php/index.php">
-  <title>CISC3003-FinalExam-Paper02C</title>
+  <title>Scenario C - Signup Login Activation Reset</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header><h1>CISC3003-FinalExam-Paper02C</h1></header>
-  <main><section class="card"><p>Opening <a href="php/index.php">CISC3003-FinalExam-Paper02C PHP page</a>...</p></section></main>
-  <footer>CISC3003 Web Programming: SITINIEK + DC227126 + 2026</footer>
+<header>
+  <h1>Scenario C: Signup Login Activation Reset</h1>
+  <p>GitHub Pages static preview of C.01-C.09. The working PHP/MySQL account system runs in XAMPP at <code>php/index.php</code>.</p>
+  <nav><a href="php/PHP_FILE_LIST.php">PHP File List</a><a class="secondary" href="My%20Screen%20Shots/C.09_create_user_dashboard_after_login.png">Dashboard Screenshot</a></nav>
+</header>
+<main>
+  <section class="card grid">
+    <div><h2>C.01 Signup</h2><p>Register page validates name, email, and password, then saves the user to MySQL.</p></div>
+    <div><h2>C.04 Login/Logout</h2><p>Login checks password hash and requires email activation before dashboard access.</p></div>
+    <div><h2>C.07 Reset</h2><p>Password reset and activation emails are sent with PHPMailer and Gmail SMTP.</p></div>
+  </section>
+  <section class="card">
+    <h2>C.09 User Dashboard Preview</h2>
+    <div class="dashboard-grid">
+      <div class="stat"><strong>Profile</strong>User control service</div>
+      <div class="stat"><strong>Activation</strong>Email confirmation required</div>
+      <div class="stat"><strong>Reset</strong>Password reset by token</div>
+    </div>
+    <div class="notice success">Ajax email validation, browser validation, server validation, account activation, password reset, and dashboard screenshots are included in <code>My Screen Shots</code>.</div>
+  </section>
+</main>
+<footer>CISC3003 Web Programming: SITINIEK + DC227126 + 2026</footer>
 </body>
 </html>

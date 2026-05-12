@@ -3,13 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=php/index.php">
-  <title>CISC3003-FinalExam-Paper02A</title>
+  <title>Scenario A - PHP Form and MySQL INSERT</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header><h1>CISC3003-FinalExam-Paper02A</h1></header>
-  <main><section class="card"><p>Opening <a href="php/index.php">CISC3003-FinalExam-Paper02A PHP page</a>...</p></section></main>
-  <footer>CISC3003 Web Programming: SITINIEK + DC227126 + 2026</footer>
+<header>
+  <h1>Scenario A: PHP Form and MySQL INSERT</h1>
+  <p>GitHub Pages static preview of A.01-A.10. The working PHP/MySQL version runs in XAMPP at <code>php/index.php</code>.</p>
+  <nav><a href="php/PHP_FILE_LIST.php">PHP File List</a><a class="secondary" href="My%20Screen%20Shots/A.10_use_SQL_INSERT_INTO_to_insert_record.png">Record Screenshot</a></nav>
+</header>
+<main>
+  <section class="card">
+    <h2>Research Interest Registration Form</h2>
+    <div class="grid">
+      <div><label>Full name</label><input value="SITINIEK" readonly></div>
+      <div><label>Email</label><input value="a2735559771@gmail.com" readonly></div>
+      <div><label>Student ID</label><input value="DC227126" readonly></div>
+    </div>
+    <label>Multi-line textarea</label>
+    <textarea readonly>This record is inserted by a prepared statement using bind_param.</textarea>
+    <label>Select list</label>
+    <select><option selected>Prepared Statements</option><option>PHP Validation</option><option>MySQL Database</option></select>
+    <fieldset><legend>Radio buttons</legend><div class="inline"><label><input type="radio" checked> Individual</label><label><input type="radio"> Lab</label></div></fieldset>
+    <fieldset><legend>Checkboxes</legend><div class="inline"><label><input type="checkbox" checked> HTML</label><label><input type="checkbox" checked> PHP</label><label><input type="checkbox" checked> MySQL</label></div></fieldset>
+    <div class="notice success"><strong>Evidence:</strong> PHP validates input, avoids SQL injection, and inserts records with a prepared statement.</div>
+  </section>
+</main>
+<footer>CISC3003 Web Programming: SITINIEK + DC227126 + 2026</footer>
 </body>
 </html>
