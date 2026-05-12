@@ -5,7 +5,7 @@ const SMTP_FROM_NAME = 'CISC3003 Paper02B Contact Form';
 const MAIL_TO = 'dc227126@um.edu.mo';
 
 // Do not commit real Gmail credentials. Use environment variables or create
-// php/gmail_credentials.local.php from the example file in this folder.
+// gmail_credentials.local.php from the example file in this folder.
 $localCredentials = __DIR__ . '/gmail_credentials.local.php';
 if (file_exists($localCredentials)) {
     require $localCredentials;

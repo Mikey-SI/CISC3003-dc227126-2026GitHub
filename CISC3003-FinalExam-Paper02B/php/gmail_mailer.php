@@ -3,13 +3,13 @@ require_once __DIR__ . '/mail_config.php';
 
 function send_gmail_message(string $to, string $subject, string $body, ?string $replyEmail = null, ?string $replyName = null): array
 {
-    $autoload = dirname(__DIR__) . '/vendor/autoload.php';
+    $autoload = __DIR__ . '/vendor/autoload.php';
     if (!file_exists($autoload)) {
         return ['ok' => false, 'status' => 'missing-phpmailer', 'debug' => 'PHPMailer vendor/autoload.php was not found.'];
     }
 
     if (!gmail_is_configured()) {
-        return ['ok' => false, 'status' => 'smtp-not-configured', 'debug' => 'Set GMAIL_USERNAME and GMAIL_APP_PASSWORD, or create php/gmail_credentials.local.php.'];
+        return ['ok' => false, 'status' => 'smtp-not-configured', 'debug' => 'Set GMAIL_USERNAME and GMAIL_APP_PASSWORD, or create gmail_credentials.local.php.'];
     }
 
     require_once $autoload;

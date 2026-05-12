@@ -10,13 +10,13 @@ function send_exam_mail(string $to, string $subject, string $body): bool
 
 function send_exam_mail_with_debug(string $to, string $subject, string $body): array
 {
-    $autoload = dirname(__DIR__) . '/vendor/autoload.php';
+    $autoload = __DIR__ . '/vendor/autoload.php';
     if (!file_exists($autoload)) {
         return ['ok' => false, 'status' => 'missing-phpmailer', 'debug' => 'PHPMailer vendor/autoload.php was not found.'];
     }
 
     if (!gmail_is_configured()) {
-        return ['ok' => false, 'status' => 'smtp-not-configured', 'debug' => 'Set GMAIL_USERNAME and GMAIL_APP_PASSWORD, or create php/gmail_credentials.local.php.'];
+        return ['ok' => false, 'status' => 'smtp-not-configured', 'debug' => 'Set GMAIL_USERNAME and GMAIL_APP_PASSWORD, or create gmail_credentials.local.php.'];
     }
 
     require_once $autoload;

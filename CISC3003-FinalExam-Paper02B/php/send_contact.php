@@ -26,6 +26,6 @@ if ($name && $email && $subject && strlen($body) >= 10) {
 }
 
 file_put_contents(__DIR__ . '/mail-debug.log', date('c') . " status=$status\n$debug\n", FILE_APPEND);
-header('Location: ../thanks.php?status=' . urlencode($status));
+header('Location: thanks.php?status=' . urlencode($status));
 exit;
 ?>
