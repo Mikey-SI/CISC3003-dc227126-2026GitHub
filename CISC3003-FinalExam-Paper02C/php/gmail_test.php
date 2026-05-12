@@ -1,0 +1,15 @@
+<?php
+require __DIR__ . '/footer.php';
+require __DIR__ . '/mailer.php';
+
+$result = null;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $to = filter_input(INPUT_POST, 'to', FILTER_VALIDATE_EMAIL) ?: 'dc227126@um.edu.mo';
+    $result = send_exam_mail_with_debug(
+        $to,
+        'CISC3003 Paper02C Gmail SMTP Test',
+        "This is a PHPMailer Gmail SMTP test from Scenario C.\nStudent: SITINIEK DC227126"
+    );
+}
+?>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scenario C Gmail Test</title><link rel="stylesheet" href="../css/styles.css"></head><body><header><h1>C.07/C.08 Gmail SMTP Test</h1><nav><a href="index.php">Home</a></nav></header><main><section class="card"><p>This test uses the same Gmail SMTP sender as account activation and password reset, using <code>smtp.gmail.com:465</code>.</p><?php if ($result): ?><div class="notice <?= $result['ok'] ? 'success' : 'error' ?>"><strong>Status:</strong> <?= htmlspecialchars($result['status']) ?><pre><?= htmlspecialchars($result['debug']) ?></pre></div><?php endif; ?><form method="post"><label>Send test email to</label><input name="to" type="email" value="dc227126@um.edu.mo" required><button>Send Gmail Test</button></form></section></main><?php exam_footer(); ?></body></html>
