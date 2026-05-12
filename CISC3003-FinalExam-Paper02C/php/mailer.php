@@ -33,8 +33,17 @@ function send_exam_mail_with_debug(string $to, string $subject, string $body): a
         $mail->SMTPAuth = true;
         $mail->Username = gmail_username();
         $mail->Password = gmail_app_password();
-        $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->SMTPSecure = SMTP_PORT === 465
+            ? PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS
+            : PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = SMTP_PORT;
+        $mail->SMTPOptions = [
+            'ssl' => [
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true,
+            ],
+        ];
         $mail->CharSet = 'UTF-8';
         $mail->setFrom(gmail_username(), SMTP_FROM_NAME);
         $mail->addAddress($to);

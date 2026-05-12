@@ -1,6 +1,6 @@
 <?php
 const SMTP_HOST = 'smtp.gmail.com';
-const SMTP_PORT = 587;
+const SMTP_PORT = 465;
 const SMTP_FROM_NAME = 'CISC3003 Paper02C Account System';
 
 $localCredentials = __DIR__ . '/gmail_credentials.local.php';

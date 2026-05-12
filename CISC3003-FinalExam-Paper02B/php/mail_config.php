@@ -1,6 +1,6 @@
 <?php
 const SMTP_HOST = 'smtp.gmail.com';
-const SMTP_PORT = 587;
+const SMTP_PORT = 465;
 const SMTP_FROM_NAME = 'CISC3003 Paper02B Contact Form';
 const MAIL_TO = 'dc227126@um.edu.mo';
 
